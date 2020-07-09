@@ -147,7 +147,7 @@ export class AppComponent implements OnInit {
       .style("text-anchor", "middle")
 
       this.svg.selectAll(".scaleLabel")
-      .data([{ value: "Porcentaje", x: 1 }])
+      .data([{ value: "Porcentaje (%)", x: 1 }])
       .enter().append("text")
       .attr("class", "text-less")
       .text((d) => { return d.value; })
